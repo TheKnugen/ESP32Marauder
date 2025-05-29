@@ -22,11 +22,11 @@
   //#define MARAUDER_DEV_BOARD_PRO
   //#define XIAO_ESP32_S3
   //#define MARAUDER_REV_FEATHER
-  //#define MARAUDER_CYD_MICRO // 2432S028
+  #define MARAUDER_CYD_MICRO // 2432S028
   //#define MARAUDER_CYD_GUITION // ESP32-2432S024 GUITION
   //// END BOARD TARGETS
 
-  #define MARAUDER_VERSION "v1.6.0"
+  #define MARAUDER_VERSION "v1.5.1"
 
   #define GRAPH_REFRESH   100
 
@@ -847,7 +847,7 @@
     
       #define STATUSBAR_COLOR 0x4A49
     
-      #define KIT_LED_BUILTIN 13
+      #define KIT_LED_BUILTIN 17
     #endif
 
     #if defined(MARAUDER_CYD_GUITION)
@@ -1643,12 +1643,12 @@
       #define GPS_RX 13
     #elif defined(MARAUDER_CYD_MICRO)
       #define GPS_SERIAL_INDEX 2
-      #define GPS_TX 27 // Fits the extended I/O
-      #define GPS_RX 22
+      #define GPS_TX 1 // Fits the extended I/O
+      #define GPS_RX 3
     #elif defined(MARAUDER_CYD_GUITION)
       #define GPS_SERIAL_INDEX 2
-      #define GPS_TX 21 // Fits the extended I/O
-      #define GPS_RX 22
+      #define GPS_TX 1 // Fits the extended I/O
+      #define GPS_RX 3
     #elif defined(MARAUDER_V4)
       #define GPS_SERIAL_INDEX 2
       #define GPS_TX 4
